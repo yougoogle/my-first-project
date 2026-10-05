@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صيدليتي - قسم المنتجات والعناية</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            direction: rtl;
+        }
+        header {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-title {
+            font-size: 1.1rem;
+            color: #00796b;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .card-desc {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .btn {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #004d40;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d40;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>صيدليتك الموثوقة</h1>
+        <p>أفضل منتجات العناية بالبشرة والشعر والأدوية والمستلزمات الطبية</p>
+    </header>
+
+    <div class="container">
+        <div class="products-grid">
+
+            <!-- منتج 1 -->
+            <div class="card">
+                <img src="sunscreen.jpg" alt="Kolagra Sunscreen Spray">
+                <div class="card-content">
+                    <h3 class="card-title">بخاخ واقي شمس Kolagra SPF50+</h3>
+                    <p class="card-desc">حماية عالية من أشعة الشمس ومقاوم للماء مع مضادات الأكسدة.</p>
+                    <button class="btn">طلب الآن</button>
+                </div>
+            </div>
+
+            <!-- منتج 2 -->
+            <div class="card">
+                <img src="influvac.jpg" alt="Influvac Vaccine">
+                <div class="card-content">
+                    <h3 class="card-title">لقاح الإنفلونزا الموسمي Influvac</h3>
+                    <p class="card-desc">مصل الوقاية من الإنفلونزا الموسمية لحماية صحتك وصحة عائلتك.</p>
+                    <button class="btn">استفسار وتوافر</button>
+                </div>
+            </div>
+
+            <!-- منتج 3 -->
+            <div class="card">
+                <img src="laroche.jpg" alt="La Roche-Posay Mela B3">
+                <div class="card-content">
+                    <h3 class="card-title">سيروم La Roche-Posay Mela B3</h3>
+                    <p class="card-desc">سيروم مركز لتصحيح البقع الداكنة وتوحيد لون البشرة.</p>
+                    <button class="btn">طلب الآن</button>
+                </div>
+            </div>
+
+            <!-- منتج 4 -->
+            <div class="card">
+                <img src="capixy.jpg" alt="Capixy Lashes Serum">
+                <div class="card-content">
+                    <h3 class="card-title">سيروم Capixy لتغذية وتكثيف الرموش</h3>
+                    <p class="card-desc">علاج مخصص لتقوية وتكثيف الرموش والحواجب.</p>
+                    <button class="btn">طلب الآن</button>
+                </div>
+            </div>
+
+            <!-- منتج 5 -->
+            <div class="card">
+                <img src="tetra-glow.jpg" alt="Tetra Glow Set">
+                <div class="card-content">
+                    <h3 class="card-title">مجموعة Tetra Glow للتفتيح</h3>
+                    <p class="card-desc">غسول وفوم وكريم نهار لحماية البشرة وتوحيد لونها مع عروض خاصة.</p>
+                    <button class="btn">عرض الخصم</button>
+                </div>
+            </div>
+
+            <!-- منتج 6 -->
+            <div class="card">
+                <img src="telofill.jpg" alt="Telofill Scrub and Lotion">
+                <div class="card-content">
+                    <h3 class="card-title">مقشر ولوشن الجسم Telofill</h3>
+                    <p class="card-desc">عناية فائقة بترطيب وترميم الجسم برائحة الورد والترطيب العميق.</p>
+                    <button class="btn">طلب الآن</button>
+                </div>
+            </div>
+
+            <!-- منتج 7 -->
+            <div class="card">
+                <img src="anivacene.jpg" alt="Anivacene Shampoo and Lotion">
+                <div class="card-content">
+                    <h3 class="card-title">مجموعة Anivacene للشعر</h3>
+                    <p class="card-desc">شامبو ولوشن مقوي ومغذي لبصيلات الشعر ومقاوم للتساقط.</p>
+                    <button class="btn">طلب الآن</button>
+                </div>
+            </div>
+
+            <!-- منتج 8 -->
+            <div class="card">
+                <img src="deodorants.jpg" alt="Deodorants Section">
+                <div class="card-content">
+                    <h3 class="card-title">مزيلات العرق والعناية الشخصية</h3>
+                    <p class="card-desc">تشكيلة واسعة من مزيلات العرق وبخاخات الانتعاش الفوري (Axe, Fogg, StarVille).</p>
+                    <button class="btn">تصفح القسم</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © صيدليتك - 2026</p>
+    </footer>
+
+</body>
+</html>
